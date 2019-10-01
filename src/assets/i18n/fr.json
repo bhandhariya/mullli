@@ -1,0 +1,11 @@
+{
+    "Text" : "Esta aplicación puede soportar múltiples idiomas",
+    "LanguageLabel" : "Seleccione el idioma",
+    "FormLabels" :{
+        "Name" : "Tu nombre",
+        "Email" : "Tu correo electrónico",
+        "Mobile" : "Tu celular",
+        "Address" : "Su dirección"
+    },
+    "BtnCaption" : "Enregistrer les détails"
+}

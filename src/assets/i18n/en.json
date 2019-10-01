@@ -1,0 +1,11 @@
+{
+    "Text" : "This Application can support multi language",
+    "LanguageLabel" : "Select Language",
+    "FormLabels" :{
+        "Name" : "Your Name",
+        "Email" : "Your Email",
+        "Mobile" : "Your Mobile",
+        "Address" : "Your Address"
+    },
+    "BtnCaption" : "Save Details"
+}

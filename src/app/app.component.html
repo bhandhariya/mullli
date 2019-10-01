@@ -1,0 +1,61 @@
+<div style="text-align:center" class="container-fluid">
+  <h2>{{ 'Text' | translate}} </h2>
+
+  <label>
+    {{ 'LanguageLabel' | translate}}
+    <select #langSelect (change)="translate.use(langSelect.value)">
+      <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
+    </select>
+  </label>
+</div>
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="card card-hover tableshadow mt-3">
+    <div class="border-top">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-input100"> {{'FormLabels.Name' | translate}} <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" formControlName="name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-input100">{{'FormLabels.Email' | translate}} <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" formControlName="email">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-input100">{{'FormLabels.Mobile' | translate}} <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" formControlName="mobile">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-input100">{{'FormLabels.Address' | translate}} <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" formControlName="address">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+              <h5 class="card-title"><button type="submit" [disabled]="form.invalid" class="btn btn-primary btn-sm float-right">
+                  {{'BtnCaption' | translate}}</button></h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+</form>

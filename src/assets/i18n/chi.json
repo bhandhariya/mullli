@@ -1,0 +1,11 @@
+{
+    "Text" : "该应用程序可以支持多国语言",
+    "LanguageLabel" : "选择语言",
+    "FormLabels" :{
+        "Name" : "你的名字",
+        "Email" : "你的邮件",
+        "Mobile" : "您的手机",
+        "Address" : "你的地址"
+    },
+    "BtnCaption" : "保存详细信息"
+}
